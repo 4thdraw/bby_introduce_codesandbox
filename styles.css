@@ -1,0 +1,239 @@
+/* 폰트와 변수 */
+@font-face {
+  font-family: "Cafe24Ohsquare";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --active-color: rgb(255, 92, 51);
+  --basic-color: #111;
+}
+/* 초기화 */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+textarea,
+input,
+select,
+textarea,
+button,
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+main {
+  margin: 0;
+  padding: 0;
+  font-family: "Cafe24Ohsquare";
+  color: var(--basic-color);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+main {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -webkit-overflow-scrolling: auto;
+}
+
+img,
+form,
+fieldset,
+svg,
+li {
+  border: 0;
+  vertical-align: top;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  margin: -1px;
+}
+
+input,
+button,
+select {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+address,
+caption,
+em {
+  font-style: normal;
+}
+
+a {
+  display: inline-block;
+  color: var(--basic-color);
+}
+
+a,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--active-color);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 공통클래스 : 부모 DOM 없이 */
+.d-flex {
+  display: flex;
+}
+.aic {
+  align-items: center;
+}
+.jcb {
+  justify-content: space-between;
+}
+.d-block {
+  display: block;
+}
+.container_fluid {
+  padding: 0 1rem;
+}
+.vh-100 {
+  height: 100vh;
+}
+.w-100 {
+  width: 100%;
+}
+.col-4 {
+  width: 33.333%;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* 커스텀스타일 */
+#hd {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--basic-color);
+}
+#hd .gnb {
+  gap: 2rem;
+}
+#hd .util {
+  gap: 1rem;
+}
+
+a.git {
+  color: black;
+}
+a.instar {
+  color: blueviolet;
+}
+a.figma {
+  color: rgb(255, 42, 0);
+}
+#contact h2 {
+  color: rgba(255, 0, 0, 0.699);
+}
+section > h2 {
+  text-align: center;
+}
+
+#slide {
+  background: url(https://vivelab.kr/web/2024/main%20banner/banner6-3_pc.jpg);
+}
+
+.scalechild1 {
+  background-color: aqua;
+}
+.scalechild2 {
+  background-color: rgb(195, 255, 0);
+}
+.scalechild3 {
+  background-color: rgb(31, 10, 90);
+}
+
+.scalebanner > * {
+  min-height: calc(100vh - 80px);
+  padding: 5vw 1vw;
+}
+
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.mt-auto {
+  margin-top: auto;
+}
